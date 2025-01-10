@@ -1,0 +1,107 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input, .input-box select, .input-box textarea {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.input-box textarea {
+    resize: none;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #666;
+}
+
+.input-box label {
+    position: absolute;
+    top: 12px;
+    left: 40px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box select:focus ~ label,
+.input-box textarea:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label,
+.input-box select:not(:placeholder-shown) ~ label,
+.input-box textarea:not(:placeholder-shown) ~ label {
+    top: -18px;
+    left: 10px;
+    color: #007bff;
+    font-size: 12px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.login-register p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-register a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+
